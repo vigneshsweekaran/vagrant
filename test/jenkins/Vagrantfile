@@ -9,7 +9,7 @@ Vagrant.configure(2) do |config|
       v.memory = 1024
       v.cpus = 1
     end
-    jenkins_test.vm.provision "shell", path: "install_gerrit.sh"
+    jenkins_test.vm.provision "shell", path: "install_jenkins.sh"
   end
 
 end
