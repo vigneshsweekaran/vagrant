@@ -1,10 +1,10 @@
 Vagrant.configure(2) do |config|
 
-  config.vm.define "ubutu22" do |ubutu22|
-    centos7.vm.box = "ubuntu/jammy64"
-    centos7.vm.hostname = "ubuntu22.example.com"
-    centos7.vm.network "private_network", ip: "172.42.42.106"
-    centos7.vm.provider "virtualbox" do |v|
+  config.vm.define "ubuntu22" do |ubuntu22|
+    ubuntu22.vm.box = "ubuntu/jammy64"
+    ubuntu22.vm.hostname = "ubuntu22.example.com"
+    ubuntu22.vm.network "private_network", ip: "172.42.42.106"
+    ubuntu22.vm.provider "virtualbox" do |v|
       v.name = "ubuntu22"
       v.memory = 2048
       v.cpus = 2
